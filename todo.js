@@ -21,7 +21,7 @@ function display(){
     let localParse=JSON.parse(localStorage.getItem('todoList'));
 
      if(localParse!==undefined && localParse!==null){
-        let localString=JSON.stringify(localParse);
+        
         for(let i=0;i<localParse.length;i++){
             newHtml+=`
             <span>${localParse[i].item}</span>
